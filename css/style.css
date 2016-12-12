@@ -1,0 +1,525 @@
+@font-face{
+	src:url("../fonts/AvenirLTStd-Light.otf");
+	src:url("../fonts/AvenirLTStd-Light.ttf");
+	src:url("../fonts/AvenirLTStd-Light.eot");
+	src:url("../fonts/AvenirLTStd-Light.woff");
+	font-family: "Avenir Light";
+}
+@font-face{
+	src:url("../fonts/kartika.ttf");
+	src:url("../fonts/kartika.eot");
+	src:url("../fonts/kartika.woff");
+	font-family: "Kartika";
+}
+body{
+	background-color: #4d4b4f;
+	font-size: 14px;
+	font-family: "Avenir Light";
+}
+@media(max-width: 767px){
+	body, html{
+	font-size:12px;
+}
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.padding-0{
+	padding: 0 !important;
+}
+.pink-underline {
+	border-bottom: 1px #ea676d solid;
+}
+.text-shadow{
+	text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+	-moz-text-shadow: -1px 2px 3px rgba(5, 0, 0, 0.2);
+	-o-text-shadow: -1px 2px 3px rgba(5, 0, 0, 0.2);
+	-webkit-text-shadow: -1px 2px 3px rgba(5, 0, 0, 0.2);
+}
+
+.section-title{
+	color: #4d4b4f;
+	font-size: 2.5rem;
+	font-family: "Avenir Light";
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 35px 0px 30px 0px;
+}
+.link-button{
+	background-color: #e86363;
+	border:1px transparent solid;
+	border-radius: 12px;
+	display: block;
+	color: #fff;
+	margin: 25px auto 0;
+	font-size: 1.165rem;
+	padding: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: .3s;
+	width: 150px;
+}
+.link-button:hover{
+	background-color: transparent;
+	border:1px #e86363 solid;
+	color: #4d4b4f;
+}
+.link-button--big{
+	min-width: 205px;
+}
+/*====================================================
+======================HEADER==========================
+====================================================*/
+.main-header{
+	background-color: #000;
+	opacity: .8;
+	z-index: 100;
+}
+.logo{
+	color:#fff;
+	display: block;
+	padding: 20px 0px 25px 0px;
+	font-size: 2.15rem;
+	text-transform: uppercase;
+}
+.menu__item{
+	border-bottom: 1px transparent solid;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.2rem;
+	margin: 28px 20px;
+	text-transform: uppercase;
+}
+.menu__item:hover{
+	border-bottom: 1px #ea676d solid;
+	color: #fff;
+	transition: .3s;
+}
+/*====================================================
+======================SLIDER==========================
+====================================================*/
+.slider__img {
+	margin: 0 auto;
+}
+.slider {
+	display: block;
+	margin: auto;
+	max-height: 650px;
+	overflow: hidden;
+}
+.slider__title{
+	color: #fff;
+	font-size: 2rem;
+	text-transform: uppercase;
+	position: absolute;
+	left:41%;
+	right: 10%;
+	bottom: 25%;
+	padding: 0; 
+}
+.slider__title a{
+	color:#fff;
+}
+.item img{
+	max-height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.carousel-inner{
+	max-height: 100vh;
+	text-align: center;
+}
+/*====================================================
+===================SERVICES===========================
+====================================================*/
+.services{
+	background-color: #f9f6f6;
+	border-top: 1px #ea676d solid;
+	}
+
+.card{
+	margin: 0 0px 40px 0px;
+}
+.card__image {
+	margin: 0 auto;
+}
+.card__image-title{
+	background-color: #000;
+	color: #f9f6f6;
+	display: block;
+	font-size: 1.6rem;
+	position: absolute;
+	overflow: auto;
+  	margin: auto;
+   left: 0; bottom: 0; right: 0;
+	opacity: .65;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.card__text{
+	font-size: 1.5rem;
+	padding: 10px 5px 0px 5px;
+}
+.relative-wrapper{
+	position: relative;
+	margin: 0 auto;
+	max-width: 300px;
+
+}
+/*==============================================
+====================PARALLAX====================
+==============================================*/
+
+.parallax {
+background: url(../images/parallax-image.jpg) 50% 0 no-repeat fixed;
+height: 400px;
+margin: 0 auto;
+width: 100%;
+max-width: 1920px;
+position: relative;
+}
+
+.parallax__title {
+color:#fff;
+font-size:4rem;
+position: absolute;
+text-align: center;
+top: 45%;
+width: 100%;
+}
+/*==============================================
+======================TEAM=====================
+==============================================*/
+.team-section{
+	background-color: #f9f6f6;
+	padding: 0 40.5px 40px;
+	margin-bottom: 40px;
+}
+.team-section:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.team-section__card-text{
+	color: #f9f5fc;
+	display: block;
+	position: absolute;
+	top: 42%;
+	width: 100%;
+	text-align: center;
+	transition: .2s;
+}
+.team-section__card{
+	max-height: 340px;
+	position: relative;
+	transition: .3s;
+}
+.team-section__card img{
+	padding-right: 1px;
+	padding-bottom: 1.5px;
+}
+.team-section__card:hover .team-section__card-text{
+	top: 30%;
+}
+.team-section__card:hover .team-section__card-undertitle{
+	opacity: 1;
+}
+.team-section__card-undertitle{
+	opacity: 0;
+	padding: 0 10px;
+	font-size: 1.1666rem;
+	transition: .3s;
+}
+.team-section__card-title{
+	font-size: 1.833rem;
+	margin: auto;
+	text-transform: uppercase;
+}
+.white-bg{
+	background-color: #f9f6f6;
+}
+.video-section .section-title{
+	color: #fff;
+}
+.video-section{
+	padding-bottom: 40px;
+}
+
+/*================================================
+===================BLOG===========================
+================================================*/
+.blog-section{
+	padding:0 20px 40px 30px;
+	
+}
+.blog-section__card{
+	padding:0 15px 0 5px;
+	margin-top: 20px;
+}
+.blog-section__card img{
+	position: relative;
+}
+.blog-section__wrapper{
+	position: relative;
+}
+
+.blog-section__card-title h3{
+	background-color: #fff;
+	font-size: 2rem;
+	opacity: .7;
+	margin: 0;	
+	text-transform: uppercase;
+	text-align: center;
+	padding: 9% 0;
+	position: absolute;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+}
+.blog-section__card-title a{
+	color: #e86363;
+}
+.blog-section__card-text{
+	font-size: 1.5rem;
+	font-family: Tahoma;
+	font-weight: lighter;
+	padding: 10px 30px 0 15px;
+}
+
+.link-button .blog-section__card-button {
+	margin: 25px auto 40px;
+}
+
+/*=================================================
+===================CONTACTS======================
+===============================================*/
+.contact-section .section-title{
+	color:#fff;
+}
+.contact-section__intro{
+	color: #f9f5fc;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	padding: 0 15px 20px 15px;
+	text-align: center;
+	width: 51.47%;
+}
+.contact-form{
+	padding-bottom: 40px;
+	text-align: center;
+}
+.contact-form__textarea{
+	height: 200px;
+	opacity: .95;
+	width: 50%;
+}
+.contact-form__input{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px #ea676d solid; 
+	outline: none;
+	width: 20.3%;
+}
+.contact-form__input-mail{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px #ea676d solid;
+	margin-top:15px;
+	margin-bottom: 22px;  
+	outline: none;
+	width: 50%;
+}
+.contact-form__input:first-child{
+	margin-right:8.3%;
+}
+.contact-form__button{
+	background-color: transparent;
+	border:1px #ea676d solid;
+}
+.contact-form__button:hover{
+	color:#fff;
+	background-color: #ea676d;
+	border:1px transparent solid;
+}
+/*==============================================
+=================FOOOTER========================
+==============================================*/
+footer{
+	background-color: #3c3c3c;
+}
+.footer-section{
+	margin-top: 25px;
+	padding-bottom: 35px;
+	text-align: center;
+	border-right: 1px #ea676d solid;
+}
+.footer-section:last-child{
+	border-left: 1px #ea676d solid;
+	border-right: none;
+}
+.footer-section:nth-child(2){
+	border-right: none;
+}
+.footer-section__title{
+	padding: 5px 0 0;
+	font-size: 18px;
+	color:#f9f5fc;
+}
+.footer-section__title__line{
+	border-top: 1px #ea676d solid;
+	background-color:#ea676d;
+	color: #ea676d;
+	margin: 3px auto 15px;
+	width: 20px;
+}
+.contact-info{
+	margin-left: 17.2%;
+	font-size: 14px;
+}
+.contact-info__item{
+	color: #f9f5fc;
+	list-style-type: none;
+}
+.contact-info__item--left{
+	margin-left: 15px;
+}
+.icons-list{
+	padding-left: 0;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.icons-list__icon{
+	display: inline-block;
+	margin: 0 10px;
+}
+.footer-newsletter{
+	border-bottom: 1px #ea676d solid;
+	border-top:1px #ea676d solid;
+	font-size: 1.16666rem;
+	opacity: .8;
+	padding: 0;
+	margin: 0 auto;
+	width: 220px;
+}
+.footer-newsletter__text{
+	color:#fff;
+	display: inline-block;
+	width:65px;
+	margin: 0;
+	padding: 0;
+}
+.footer-newsletter__input{
+	width:150px;
+}
+.footer-section__logo{
+	color: #b5b0b0;
+	font-size: 4.1666rem;
+	font-family: "Kartika";
+}
+.pink-color{
+	color: #ea676d;
+}
+
+/*========================================
+==================MOBILE==================
+========================================*/
+.mobile-menu{
+	background:url('../images/mobile-menu-icon.png') no-repeat;
+	background-size: 35px 35px;
+	background-position: center center;
+	border: none;
+	color:#fff;
+	display: none;
+	height: 35px;
+	text-align: center;
+	margin: 5px auto;
+	padding: 5px;
+	text-transform: uppercase;
+	width: 35px;
+}
+.mobile-menu:focus{
+	outline: none;
+}
+@media(max-width: 767px){
+	.menu__item{
+		display: block;
+		text-align: center;
+	}
+	.mobile-menu{
+		display: block;
+		
+	}
+	.menu{
+		display: none;
+	}
+	.slider
+	.team-section__card-undertitle{
+		display: none;
+	}
+	.blog-section__card-title h2{
+		padding: 15px 3px;
+	}
+	.team-section__card-undertitle{
+		visibility: hidden;
+	}
+	.team-section__card:hover .team-section__card-text{
+	top: 42%;
+	}
+	.contact-section__intro{
+		width: 100%;
+	}
+	.contact-form__input {
+		width: 92%;
+	}
+	.contact-form__input:first-child{
+		margin: 0 0 15px 0;
+	}
+	.contact-form__input-mail{
+	width: 92%;
+}
+	.contact-form__textarea {
+		width: 92%;
+	}
+
+	.footer-section{
+		border-right: none;
+	}
+	.icons-list__icon {
+		margin: 0 3px;
+	}
+	.parallax__title{
+		font-size: 3rem;
+	}
+	.team-section__card-title{
+		font-size: 1.5rem;
+	}
+	.footer-section:last-child{
+		border-left: none;
+	}
+}
+@media (min-width:400px) and (max-width:767px){
+	.center-image{
+		margin: 0 auto;
+
+	}
+}
+@media (min-width:525px) and (max-width:767px){
+	.blog-section__card-title h3{
+		width: 450px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	.blog-section__card img{
+		margin: 0 auto;
+	}
+}

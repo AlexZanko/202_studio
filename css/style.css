@@ -142,7 +142,7 @@ a{
 	}
 
 .card{
-	margin: 0 0px 40px 0px;
+	margin-bottom:40px;
 }
 .card__image {
 	margin: 0 auto;
